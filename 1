@@ -1,0 +1,68 @@
+## Count of vowels and consonants in a given string
+
+a=input()
+v=0
+c=0
+for i in a:
+  if(i=='a' or i=='e' or i =='i' or i=='o' or i=='u'):
+    v+=1
+  else:
+      c+=1
+print("vowel",v)
+print("consonant",c)
+
+## check weather alphabet or not
+
+a=input()
+if a<='z' and a>='a' or a<='Z' and a>='A':
+  print("alphabet")
+else:
+  print("not")
+
+
+## check how many alphabets and digits in given input
+
+a=input()
+b = 0
+n = 0
+for i in a:
+  if 'a'<=i<='z' or 'A'<=i<='Z':
+    b+=1
+  else:
+      n+=1
+print("alphabet",b)
+print("number",n)
+
+#converting first and last letter of word to uppercase in a scentence
+
+str=input()
+words=str.split()
+cap_words=[]
+for word in words:
+  if len(word)>1:
+    cap_word=word[0].upper()+word[1:-1]+word[-1].upper()
+  else:
+    cap_word=word.upper()
+  cap_words.append(cap_word)
+print(' '.join(cap_words))
+
+
+#reverse the sting without using slicing
+
+str=input()
+str1=""
+for i in range(len(str)-1,-1,-1):
+  str1+=str[i]
+print(str1)
+
+# converting string to upper to lower ad lower to uppercase
+
+str=input()
+str1=""
+for i in str:
+  if i.isupper():
+    str1+=i.lower()
+  else:
+    str1+=i.upper()
+print(str1)
+
